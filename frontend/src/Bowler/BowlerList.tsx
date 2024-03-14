@@ -7,9 +7,13 @@ function BowlerList() {
 
   useEffect(() => {
     const fetchBowlerData = async () => {
-      const rsp = await fetch('http://localhost:5166/Bowler/GetBowlers');
-      const f = await rsp.json();
-      setBowlerData(f);
+      try {
+        const rsp = await fetch('http://localhost:5254/bowler');
+        const b = await rsp.json();
+        setBowlerData(b);
+      } catch (error) {
+        console.error('Error fetching bowler data:', error);
+      }
     };
     fetchBowlerData();
   }, []);
@@ -40,7 +44,7 @@ function BowlerList() {
                   <td>{bowler.bowlerFirstName}</td>
                   <td>{bowler.bowlerMiddleInit}</td>
                   <td>{bowler.bowlerLastName}</td>
-                  <td>{bowler.teamName}</td> {/* Display teamName */}
+                  <td>{bowler.team.teamName}</td>
                   <td>{bowler.bowlerAddress}</td>
                   <td>{bowler.bowlerCity}</td>
                   <td>{bowler.bowlerState}</td>

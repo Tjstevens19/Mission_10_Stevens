@@ -27,6 +27,12 @@ namespace BowlingFun.Controllers
             {
                 // Get the team for each bowler
                 bowler.Team = _bowlerRepository.GetTeamById(bowler.TeamID);
+
+                // Filter out the bowlers not on the Marlins or Sharks team
+                if (bowler.Team.TeamName != "Marlins" && bowler.Team.TeamName != "Sharks")
+                {
+                    bowlers = bowlers.Where(b => b.BowlerID != bowler.BowlerID);
+                }
             }
 
             return bowlers;
