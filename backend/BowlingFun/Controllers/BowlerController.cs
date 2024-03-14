@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace BowlingFun.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class BowlerController : ControllerBase
     {

@@ -125,3 +125,4 @@ C:\Users\tdogs\source\repos\Mission_10_Stevens\backend\BowlingFun\obj\Debug\net8
 C:\Users\tdogs\source\repos\Mission_10_Stevens\backend\BowlingFun\obj\Debug\net8.0\BowlingFun.pdb
 C:\Users\tdogs\source\repos\Mission_10_Stevens\backend\BowlingFun\obj\Debug\net8.0\BowlingFun.genruntimeconfig.cache
 C:\Users\tdogs\source\repos\Mission_10_Stevens\backend\BowlingFun\obj\Debug\net8.0\ref\BowlingFun.dll
+C:\Users\tdogs\source\repos\Mission_10_Stevens\backend\BowlingFun\obj\Debug\net8.0\BowlingFun.sourcelink.json
